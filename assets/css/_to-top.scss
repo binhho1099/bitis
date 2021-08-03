@@ -1,0 +1,50 @@
+.to-top{
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    @include flex('center');
+    background-color: $secondary-color;
+    @include text(2rem,$white-color);
+    transition: all 0.4s linear;
+    opacity: 0;
+    &.to-top-active{
+        bottom: 32px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white-color;
+    z-index: 100;
+    @include flex('center');
+    &-item{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 10px solid $white-color;
+        border-right-color: $primary-color;
+        border-top-color: $primary-color;
+        border-left-color: $primary-color;
+        animation: rotate 1.5s linear infinite;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

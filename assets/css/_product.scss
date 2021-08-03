@@ -37,14 +37,27 @@
         }
         &__description{
             display: block;
-            @include text(1.2rem,$black-color);
+            @include text(1.3rem,$black-color);
             text-transform: capitalize;
             margin: 10px 0;
+            font-weight: 300;
         }
         &__price{
-            display: block;
-            @include text(1.8rem,$secondary-color);
-            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            @include text(1.6rem,$secondary-color);
+            font-weight: 400;
+            &-old{
+                @include text(1.2rem,$subtext-color);
+                text-decoration: line-through;
+            }
+            &-percent{
+                display: inline-block;
+                @include text(1.3rem,$white-color);
+                padding: 5px;
+                background-color: $secondary-color;
+            }
         }
         &__btn{
             text-align: center;

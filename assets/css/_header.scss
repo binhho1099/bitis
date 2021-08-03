@@ -99,7 +99,7 @@
     // height: 88px;
     background-color: $white-color;
     &-toggle{
-        font-size: 2.5rem;
+        font-size: 3rem;
         display: none
     }
     &-content{
@@ -186,7 +186,7 @@
         }
         &__list{
             position: absolute;
-            width: 300px;
+            width: 400px;
             top: 150%;
             right: 0;
             background-color: $white-color;
@@ -196,6 +196,7 @@
             visibility: hidden;
             opacity: 0;
             transition: all 0.2s linear;
+            z-index: 10;
         }
         &__list::before{
             content: "";
@@ -221,7 +222,8 @@
         &__heading{
             @include text(1.8rem,$black-color);
             font-weight: 500;
-            padding: 10px 10px 0;
+            padding: 15px 20px;
+            border-bottom: 0.5px solid $border-color;
         }
         &__img{
             width: 100%;

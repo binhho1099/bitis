@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/28e73f5990.js"></script>
     <link rel="icon" href="./assets/img/logo.png" type="image/gif" sizes="16x16">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Trang bán hàng trực tuyến của Biti's</title>
 </head>
 <body>
@@ -65,12 +69,12 @@
                             </div>
                             <ul class="header-category">
                                 <li class="header-category__item"><a class="header-category__item-link header-category__active" href="#">Về Biti's</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Nam</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Nữ</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Gosto</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Bé Trai</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Bé Gái</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#">Outlet</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#men">Nam</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#women">Nữ</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#gosto">Gosto</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#boy">Bé Trai</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#girl">Bé Gái</a></li>
+                                <li class="header-category__item"><a class="header-category__item-link" href="#news">Tin Tức</a></li>
                             </ul>
                         </div>
                         <div class="header-sidebar">
@@ -109,13 +113,21 @@
         
     </header>
     <!-- header end -->
-
-    <!-- slider start -->
-    <section class="slider">
-        <img src="./assets/img/slider1.jpg" alt="">
-    </section>
-    <!-- slider end -->
     
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/3518cf9bc041341f6d50_c0a42b7f02c045ff90a7baf67f11c52f_master.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/2048x693_combo20_7125b4e04d3041f6b8e3549735919412_master.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/bitis_june_21_sandal_ct_d02b34cfc09845a1bdd85a29aea0c998_master.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/milo_2c28917796234b0e932b9c44ef5018d4_master.png" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"><img src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509" alt=""></div>
+        <div class="swiper-button-next"><img src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509" alt=""></div>
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
     <!-- gallery start -->
     <section class="gallery">
         <div class="grid wide">
@@ -146,12 +158,16 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <p class="product-item__price">
+                                449,500đ
+                                <span class="product-item__price-old">899,000đ</span>
+                                <span class="product-item__price-percent">-50%</span>
+                            </p>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -159,12 +175,16 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh01100cam__5__1a189b8f8b394b3fa2c5e58b9ba57b6b_large.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <p class="product-item__price">
+                                629,000 đ
+                                <span class="product-item__price-old">899,000đ</span>
+                                <span class="product-item__price-percent">-30%</span>
+                            </p>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -172,12 +192,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh03400xmn_5__97ab4d643dd14faca4edf02a9d57ce26_large.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <span class="product-item__price">999,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -185,12 +205,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/03400cam__6__5022ef5622dc46b1bd893b238de2200f_large.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <span class="product-item__price">999,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -198,26 +218,26 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/9_4af2a89ef6a8461184dda8b5339a0787_large.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <span class="product-item__price">915,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <!-- new product end -->
 
     <!-- men product start -->
-    <section class="product">
+    <section class="product" id="men">
         <div class="grid wide">
             <div class="product-heading">
                 <a href="#"><h3>Nam</h3></a>
@@ -239,7 +259,7 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700trg39_1_fix_ac84357c18d84672b09db8abebfa6ce4_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
@@ -252,7 +272,7 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700den39_1_fix_9d0019e375744e1c8a22eb43fc96b024_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
@@ -265,12 +285,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06500xam_b0fb33a8959d4b0da054f2bded78ea25_medium.png" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <span class="product-item__price">899,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -278,26 +298,26 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06500den_6fcdc60b38d1413d9591bc485cab90a0_medium.png" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
                             <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
                             <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <span class="product-item__price">899,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <!-- men product end -->
 
     <!-- women product start -->
-    <section class="product">
+    <section class="product" id="women">
         <div class="grid wide">
             <div class="product-heading">
                 <a href="#"><h3>Nữ</h3></a>
@@ -306,12 +326,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06100kem-2_661cd2a87990466393eebab7dad1ee7c_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
+                            <span class="product-item__description">Hunter nữ</span>
+                            <span class="product-item__price">1,499,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -322,8 +342,8 @@
                             <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
+                            <a href="#"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
+                            <span class="product-item__description">Hunter nữ</span>
                             <span class="product-item__price">699,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
@@ -332,11 +352,24 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsw065000hog_5fcf3318390040c6a7b3be12188a6521_medium.png" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
+                            <a href="#"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
+                            <span class="product-item__description">Hunter nữ</span>
+                            <span class="product-item__price">829,000 đ</span>
+                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/3034359ae88f1fd1469e_23856f9efc7d49f9848c9d9aa3a21623_medium.jpg" alt="product"></a> 
+                        </div>
+                        <div class="product-item__info">
+                            <a href="#"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
+                            <span class="product-item__description">Hunter nữ</span>
                             <span class="product-item__price">699,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
@@ -345,39 +378,26 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dswh06200tim39_1__6e7ae84c155a431697fe544816f5271e_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
+                            <span class="product-item__description">Hunter nữ</span>
+                            <span class="product-item__price">799,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <!-- women product end -->
     
     <!-- GOSTO start -->
-    <section class="product">
+    <section class="product" id="gosto">
         <div class="grid wide">
             <div class="product-heading">
                 <a href="#"><img src="https://file.hstatic.net/1000230642/file/logo_master.png" alt=""></a>
@@ -386,11 +406,50 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsc_0919_2208f32bd36b456cb95be53e69eceb95_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
+                            <span class="product-item__description">Giày thời trang nữ</span>
+                            <span class="product-item__price">799,000 đ</span>
+                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsc_0797_11b21a612f914f79a845b793f7c374ad_medium.jpg" alt="product"></a> 
+                        </div>
+                        <div class="product-item__info">
+                            <a href="#"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
+                            <span class="product-item__description">Giày thời trang nữ</span>
+                            <span class="product-item__price">799,000 đ</span>
+                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/gfw017200den__5__5faab268eea341e997d9781346535d15_medium.jpg" alt="product"></a> 
+                        </div>
+                        <div class="product-item__info">
+                            <a href="#"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
+                            <span class="product-item__description">Giày thời trang nữ</span>
+                            <span class="product-item__price">799,000 đ</span>
+                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4 m-4 c-6">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/gfw016900den__5__5d24eb084bc643178450a610f1fbcd0f_medium.jpg" alt="product"></a> 
+                        </div>
+                        <div class="product-item__info">
+                            <a href="#"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
+                            <span class="product-item__description">Giày thời trang nữ</span>
                             <span class="product-item__price">699,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
@@ -399,50 +458,11 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/gfw016700trg__5__5c40673b6b9e446eb5f925639a046efc_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="#" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
+                            <span class="product-item__description">Giày thời trang nữ</span>
                             <span class="product-item__price">699,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
@@ -450,7 +470,7 @@
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -463,7 +483,7 @@
     </div>
 
     <!-- boy product start -->
-    <section class="product">
+    <section class="product" id="boy">
         <div class="grid wide">
             <div class="product-heading">
                 <a href="#"><h3>Bé Nam</h3></a>
@@ -472,12 +492,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/deb008100doo__5__87ead35244af40a1bcbadca005df8c41_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Trai</span>
+                            <span class="product-item__price">245,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -485,12 +505,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drb031400xam28_4__55327806a0b047a29570f57eae596dff_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Trai</span>
+                            <span class="product-item__price">255,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -498,12 +518,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drb031400xmn_3_7b521f5c220c42359ed7b80cb252e7c6_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Trai</span>
+                            <span class="product-item__price">255,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -511,12 +531,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drb031600den35_4__6211b3bf60d945a48b3770992e2e4c21_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Trai</span>
+                            <span class="product-item__price">290,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -524,19 +544,19 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drb031600reu_3_3db93ae1390f4f5bbef85ecc4c01c869_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Trai</span>
+                            <span class="product-item__price">290,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -549,7 +569,7 @@
     </div>
 
     <!-- girl product start -->
-    <section class="product">
+    <section class="product" id="girl">
         <div class="grid wide">
             <div class="product-heading">
                 <a href="#"><h3>Bé gái</h3></a>
@@ -558,12 +578,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/deg007700hog__5__25f9ad4e05514645963cee6a7d33536c_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Gái</span>
+                            <span class="product-item__price">260,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -571,12 +591,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/deg007700xnh__4__d43e7ece7c354a97bf4c1d11acc5a791_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Gái</span>
+                            <span class="product-item__price">260,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -584,12 +604,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/deg007701trg__5__707ea658ebf849e08d29e128b06e7dc7_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Gái</span>
+                            <span class="product-item__price">260,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -597,12 +617,12 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drg001600hog28_4__9d53ee04cdc647849c82ef18fd717c81_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Gái</span>
+                            <span class="product-item__price">245,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
@@ -610,26 +630,26 @@
                 <div class="col l-2-4 m-4 c-6">
                     <div class="product-item">
                         <div class="product-item__img">
-                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
+                            <a href="#"><img src="https://product.hstatic.net/1000230642/product/drg001600xnh_3_9643ea270b6f4edd9f7aa3b74498e023_medium.jpg" alt="product"></a> 
                         </div>
                         <div class="product-item__info">
-                            <a href="#"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
+                            <a href="#"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
+                            <span class="product-item__description">Sandal Bé Gái</span>
+                            <span class="product-item__price">245,000 đ</span>
                             <a href="#" class="product-item__btn btn">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="product-detail">
-                <a href="#">Xem thêm<i class="fas fa-long-arrow margin-alt-right"></i></a>
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <!-- girl product end -->
 
     <!-- news start -->
-    <section class="news">
+    <section class="news" id="news">
         <div class="grid wide">
             <div class="news-box">
                 <div class="news-tittle">
@@ -960,6 +980,12 @@
     </footer>
     <!-- footer end -->
     
+    <!-- Back to top -->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Back to top -->
+
     <!-- mobile menu -->
     <div class="menu" id="menu">
         <div class="menu-overlay">
@@ -976,12 +1002,12 @@
                 <div class="menu-body">
                     <ul class="menu-list">
                         <li class="menu-item"><a href="#">Về Biti's</a></li>
-                        <li class="menu-item"><a href="#">Nam</a></li>
-                        <li class="menu-item"><a href="#">Nữ</a></li>
-                        <li class="menu-item"><a href="#">GOSTO</a></li>
-                        <li class="menu-item"><a href="#">Bé Trai</a></li>
-                        <li class="menu-item"><a href="#">Bé Gái</a></li>
-                        <li class="menu-item"><a href="#">Outlet</a></li>
+                        <li class="menu-item"><a href="#men">Nam</a></li>
+                        <li class="menu-item"><a href="#ươmen">Nữ</a></li>
+                        <li class="menu-item"><a href="#gosto">GOSTO</a></li>
+                        <li class="menu-item"><a href="#boy">Bé Trai</a></li>
+                        <li class="menu-item"><a href="#girl">Bé Gái</a></li>
+                        <li class="menu-item"><a href="#news">Tin tức</a></li>
                     </ul>
                 </div>
             </div>
@@ -1014,6 +1040,18 @@
         </div>
     </div>
     <!-- mobile language -->
+
+    <!-- loading page -->
+    <div class="loading">
+        <div class="loading-item"></div>
+    </div>
+    <!-- loading page -->
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script/main.js"></script>
 </body>
 </html>
