@@ -1,0 +1,81 @@
+.product{
+    padding: 10px 0;
+    &-heading{
+        @include flex('center');
+        padding: 45px 0 30px;
+        font-weight: 500;
+    }
+    &-heading > a{
+        @include text(2.5rem,$primary-color);
+    }
+    &-item{
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px $shadow-color;
+        transition: all 0.2s linear;
+        &__img{
+            overflow: hidden;
+        }
+        & img{
+            width: 100%;
+            transition: all 0.3s linear;
+        }
+        &__info{
+            padding: 10px;
+            background-color: $white-color;
+        }
+        &__name{
+            @include text(1.6rem,$black-color);
+            font-weight: 400;
+            text-transform: capitalize;
+            @include lineLimit(2);
+            transition: all 0.2s linear;
+            line-height: 1.2;
+        }
+        &__name:hover{
+            color: $secondary-color;
+        }
+        &__description{
+            display: block;
+            @include text(1.2rem,$black-color);
+            text-transform: capitalize;
+            margin: 10px 0;
+        }
+        &__price{
+            display: block;
+            @include text(1.8rem,$secondary-color);
+            font-weight: 500;
+        }
+        &__btn{
+            text-align: center;
+            margin: 10px 0;
+            background-color: $primary-color;
+        }
+        &__btn:hover{
+            opacity: 0.8;
+        }
+    }
+    &-item:hover img{
+        transform: scale(1.15);
+        // object-fit: cover;
+    }
+    &-item:hover{
+        transform: translateY(-5px);
+    }
+    &-item:hover .product-item__btn{
+        background-color:$secondary-color;
+    }
+    &-detail{
+        @include flex('center');
+        padding: 30px 0 0 ;
+    }
+    &-detail > a{
+        @include text(1.6rem, $primary-color);
+        letter-spacing: 2px;
+        transition: all 0.2s linear;
+    }
+    &-detail > a:hover{
+        color: $secondary-color;
+        transform: scale(1.2);
+    }
+}

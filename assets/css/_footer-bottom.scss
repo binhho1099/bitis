@@ -1,0 +1,25 @@
+.footer-bottom{
+    padding: 20px 0;
+    background-color: $black-color;
+    &__rules a{
+        display: inline-block;
+        margin-right: 15px;
+        @include text (1.4rem, $white-color);
+        line-height: 1.6;
+    }
+    &__rules a:hover{
+        text-decoration: underline;
+    }
+    &__rules p{
+        @include text (1.4rem, $white-color);
+        margin: 10px 0;
+    }
+    &__document{
+        text-align: center;
+        & > p{
+            @include text (1.4rem, $white-color);
+            margin: 0 30px;
+            line-height: 1.4;
+        }
+    }
+}

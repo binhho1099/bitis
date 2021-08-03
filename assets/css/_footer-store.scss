@@ -1,0 +1,48 @@
+.footer-store{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    &__map{
+        flex-basis: 55%;
+        &>img{
+            // max-height: 490px;
+            width: 100%;
+        }
+    }
+    &__content{
+        margin-left: 20px;
+        flex-basis: 45%;
+    }
+
+    &__choose select{
+        width: 100%;
+        padding: 5px 10px;
+        @include text(1.4rem,$black-color);
+    }
+    &__list ul{
+        height: 45rem;
+        overflow-y: auto;
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        padding: 2rem 0;
+        &-icon > i{
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+        &-info > h3{
+            @include text(1.5rem,$black-color);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: 1px;
+        }
+        &-info > span{
+            display: block;
+            @include text(1.3rem,$subtext-color);
+            font-weight: 300;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+    }
+}

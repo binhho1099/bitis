@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*, *::after,*::before{
+	box-sizing: inherit;
+}
+html{
+	font-size: 62.5%;
+	line-height: 1.4rem;
+	font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+// variable
+$primary-color: #034ea1;
+$secondary-color: #ec1c24;
+$black-color:#000;
+$white-color: #fff;
+$border-color:#9a9a9a;
+$shadow-color: rgba(black,0.3);
+$subtext-color:#727272;
+$hover-color: rgb(192, 192, 192);
+
+a{
+    display: block;
+    text-decoration: none;
+}
+// mixin
+@mixin absolute($direction: "center") {
+    position: absolute;
+    @if $direction == "center"{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    @if $direction == "vertical"{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $direction == "horizontal" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin text ($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin flex ($justify: "center") {
+    display: flex;
+    align-items: center;
+    @if $justify == "center" {
+        justify-content: center;
+    }
+    @if $justify == "between" {
+        justify-content: space-between;
+    }
+    @if $justify == "around" {
+        justify-content: space-around;
+    }
+}
+
+@mixin lineLimit ($n){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $n;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+// class
+.btn{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: $white-color;
+    background-color: $black-color;
+    &-primary{
+        background-color: $secondary-color;
+    }
+    &-blue{
+        background-color: $primary-color;
+    }
+}
+
+.separation{
+    font-size: 1.4rem;
+    color: $white-color;
+    margin: 0 3px;
+}

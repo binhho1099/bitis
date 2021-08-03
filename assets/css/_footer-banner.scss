@@ -1,0 +1,70 @@
+.footer-banner{
+
+    &__tittle{
+        padding: 20px 0;
+        background-color: $black-color;
+        color: $white-color;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-align: center;
+
+        &>span{
+            color: $primary-color;
+        }
+    }
+    &__img{
+        display: flex;
+        max-height: 300px;
+        &-item{
+            flex:0 0 12.5%;
+            max-width: 12.5%;
+            
+            overflow: hidden;
+            &>img{
+                width: 100%;
+                transition: transform 0.5s linear;
+            }
+            &:hover>img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__bottom{
+        @include flex('between');
+        padding: 20px 0;
+
+        &>h3{
+            @include text(1.4rem, $subtext-color);
+            font-weight: 300;
+        }
+        & > form {
+            flex-basis: 60%;
+            @include flex('between');
+        }
+        & input{
+            padding: 10px;
+            outline: none;
+            font-size: 1.4rem;
+            flex: 1;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+        }
+        & input:focus{
+            box-shadow: 0 0 5px $primary-color;
+            border: 1px solid $primary-color;
+
+        }
+        & button{
+            padding: 10px 20px;
+            font-size: 1.4rem;
+            margin-left: 15px;
+            transition: all 0.2s linear;
+            font-weight: 500;
+        }
+        & button:hover{
+            background-color: $secondary-color;
+        }
+    }
+
+}

@@ -1,0 +1,48 @@
+.footer-connec{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    &__list{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item h3{
+        @include text(1.8rem, $black-color);
+        letter-spacing: 1px;
+        margin: 10px 0 20px;
+    }
+    &__item a{
+        font-size: 1.4rem;
+        padding: 10px 0;
+        color: $subtext-color;
+    }
+    &__item a:hover{
+        color: $secondary-color;
+    }
+    & img{
+        width: 30%;
+    }
+    &__bitis{
+        flex-basis: 45%;
+
+        & img{
+            margin-bottom: 20px;
+            margin-top: -25px;
+        }
+        & h3{
+            @include text(1.8rem, $black-color);
+            font-weight: 500;
+        }
+        & p{
+            @include text(1.4rem, $subtext-color);
+            font-weight: 300;
+            line-height: 2rem;
+            letter-spacing: 0.5px;
+        }
+        & span{
+            font-weight: 500;
+            color: $black-color;
+        }
+    }
+}

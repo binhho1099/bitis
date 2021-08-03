@@ -1,0 +1,65 @@
+.language{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    // visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: all 0.2s linear;
+    &-overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: flex;
+    }
+
+    &-box{
+        margin: auto;
+        width: 90%;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all 0.2s linear;
+    }
+    &-header{
+        text-align: center;
+        background-color: $primary-color;
+        position: relative;
+        & > i{
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            @include text(1.8rem,$white-color);
+        }
+
+        &>h3{
+            padding: 20px 0;
+            @include text(2rem,$white-color);
+        }  
+    }
+    &-body{
+        background-color: $white-color;
+        padding: 20px;
+        &__list{
+            @include flex('around');
+        }
+        &__item>a{
+            display: flex;
+            flex-direction: column;
+            @include text(1.4rem,$black-color);
+            &>img{
+                height: 4rem;
+                object-fit: cover;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &-show{
+        // visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+}

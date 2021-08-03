@@ -1,0 +1,89 @@
+.news{
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        // max-height: 50rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $border-color;
+        &__slider{
+            flex-basis: calc(50% - 10px);
+            max-height: 50rem;   
+        }
+        &__slider img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__list{
+            flex-basis: calc(50% - 10px);
+            overflow-y: auto;
+            max-height: 50rem;
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            &-info{
+                margin-left: 10px;
+            }
+            &-info h3{
+                @include text(1.6rem, $black-color);
+                font-weight: 500;
+                margin-bottom: 10px;
+                line-height: 1.2;
+                transition: color 0.15s linear;
+            }
+            &-info h3:hover{
+                color: $secondary-color;
+            }
+            &-info span{
+                @include text(1.2rem,$subtext-color);
+                @include lineLimit(4);
+                line-height: 1.2;
+            }
+            &-img{
+                max-width: 20rem;
+                min-width: 20rem;
+                position: relative;
+                & >img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: rgba(0 ,0,0,0.7);
+    overflow: hidden;
+    transition: all 0.3s linear;
+    &__tittle{
+        margin-bottom: 20px;
+        color: $white-color;
+    }
+    &__social{
+        display: flex;
+    }
+    &__social > a{
+        color: $white-color;
+        margin: 0 5px;
+    }
+}
+
+.news-content__item-img:hover .img-overlay{
+    height: 100%;
+    bottom: 0;
+}
+
