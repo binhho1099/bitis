@@ -2043,6 +2043,9 @@ a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .detail-product__info-price p {
+    margin-bottom: 10px;
+  }
   .detail-product__info-content-btn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2067,7 +2070,7 @@ a {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 30px 50px;
 }
 
 .login-tittle {
@@ -2133,7 +2136,6 @@ a {
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
-  margin-bottom: 30px;
 }
 
 .login-social__item-fb, .login-social__item-gg {

@@ -57,7 +57,9 @@
         &-price{
             flex-direction: column;
             align-items: flex-start;
-
+            & p{
+                margin-bottom: 10px;
+            }
         }
         &-content-btn{
             flex-direction: column;

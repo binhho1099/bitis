@@ -4,7 +4,7 @@
         border-radius: 5px;
         box-shadow: 0 0 5px $shadow-color;
         text-align: center;
-        padding: 10px 30px;
+        padding: 10px 30px 50px;
     }
 
     &-tittle{
@@ -56,7 +56,6 @@
     &-social{
         display: grid;
         row-gap: 10px;
-        margin-bottom: 30px;
         &__item-fb,
         &__item-gg{
             width: 100%;
