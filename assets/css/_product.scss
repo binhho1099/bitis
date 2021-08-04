@@ -51,6 +51,9 @@
             &-old{
                 @include text(1.2rem,$subtext-color);
                 text-decoration: line-through;
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
             }
             &-percent{
                 display: inline-block;

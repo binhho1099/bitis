@@ -1,3 +1,4 @@
+// index.html
 @import 'global';
 @import 'header';
 @import 'slider';
@@ -13,3 +14,10 @@
 @import 'menu';
 @import 'language';
 @import 'to-top';
+// product.html
+@import 'detail-nav';
+@import 'detail-product';
+@import 'responsive-product';
+// login
+@import 'login';
+@import 'responsive-login';

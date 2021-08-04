@@ -1,0 +1,22 @@
+.detail{
+    background-color: #efefef;
+    padding: 15px 0;
+    margin: .5rem 0 1rem;
+    &-nav{
+        // margin-bottom: 10px;
+        &__list{
+            display: flex;
+        }
+        &__item,
+        &__item a{
+            @include text(1.4rem,$subtext-color);
+            font-weight: 300;
+        }
+        &__item:not(:last-child){
+            margin-right: 10px;
+        }
+        &__item a:hover{
+            color: $primary-color;
+        }
+    }
+}

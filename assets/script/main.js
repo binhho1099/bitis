@@ -59,7 +59,16 @@ $(window).on('load', function(event){
     $('.loading').delay(1000).fadeOut('fast');
 });
 
+// size
+const size = document.querySelectorAll('.size');
+function sizeActive(){
+    size.forEach(i => i.classList.remove('size-active'));
+    this.classList.add('size-active');
+}
+size.forEach(i => i.addEventListener('click', sizeActive))
 
+
+// slider
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -81,3 +90,5 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   });
+
+

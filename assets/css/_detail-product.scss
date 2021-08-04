@@ -1,0 +1,196 @@
+.detail-product__image{
+
+    &-box{
+        display: flex;
+    }
+    &-slide{
+        padding: 0 5px;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        max-height: 400px;
+        overflow-y: hidden;
+        & >img{
+            margin: 5px;
+            border: 1px solid $border-color;
+        }
+    }
+    &-pagination{
+        text-align: center;
+        padding: 1.5rem;
+        &>i{
+            @include text(3rem,$subtext-color);
+        }
+        & > .fa-chevron-right,
+        & >.fa-chevron-left{
+            display: none;
+        }
+    }
+    &-img{
+        width: 100%;
+        height: auto;
+        align-self: stretch;
+        &>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    &-description{
+        padding: 10px 20px;
+        margin: 10px 0;
+        @include text(1.5rem,$subtext-color);
+        border: 1px solid $border-color;
+    }
+    &-tittle{
+        @include text(1.8rem,$black-color);
+        margin: 20px 0;
+    }
+    &-evaluated{
+        @include flex('between');
+        margin: 10px 0;
+        & ul{
+            display: flex;
+            margin: 5px 0;
+        }
+        & li{
+            @include text(1.8rem,gold);
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        & p{
+            @include text(1.4rem, $subtext-color);
+            margin-top: 20px;
+        }
+        &-insert:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
+.detail-product__info{
+    
+    &-header{
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+        & > h2 {
+            @include text(1.6rem,$black-color);
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+        & > span{
+            @include text(1.4rem,$subtext-color);
+            font-weight: 300;
+        }
+    }
+    &-price{
+        @include flex('between');
+        margin: 10px 0;
+        & > p{
+            @include text(2rem,$secondary-color);
+        }
+
+        & > span{
+            @include text(1.4rem,$subtext-color);
+        }
+    }
+    &-content{
+        padding-bottom: 30px;
+        border-bottom: 1px solid $border-color;
+    }
+    &-content-list{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        & > p{
+            @include text(1.4rem, $black-color);
+            min-width: 90px;
+        }
+
+        & > ul{
+            display: flex;
+            column-gap: 10px;
+            & li{
+                width: 30px;
+                height: 30px;
+                border: 1px solid $black-color;
+                @include flex('center');
+                @include text(1.3rem,$black-color);
+                cursor: pointer;
+            }
+        }
+        &>span{
+            @include text(1.4rem, $black-color);
+        }
+    }
+    &-content-color{
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 35px;
+        border: 1px solid $secondary-color;
+        background: url('https://theme.hstatic.net/1000230642/1000679613/14/bg-product.png?v=1509')
+        right bottom no-repeat ;
+        cursor: pointer;
+        &>img{
+            width: 35px;
+            height: 100%;
+            object-fit: cover
+        }
+        &> span{
+            @include text(1.3rem,$black-color);
+        }
+    }
+    &-content-btn{
+        @include flex('between');
+
+        & > a{
+            flex-basis: calc(50% - 5px);
+            text-align: center;
+        }
+        & > a:hover{
+            opacity: 0.9;
+        }
+    }
+
+
+    &-footer{
+        @include flex('between');
+        margin: 10px 0 40px;
+        &-hostline{
+            @include flex;
+            @include text(1.4rem,$black-color);
+            column-gap: 10px;
+        }
+        &-payment{
+            @include flex;
+            column-gap: 20px;
+        }
+    }
+
+    &-suggest-tittle{
+        @include text(2rem, $black-color);
+        margin-bottom: 10px;
+    }
+}
+
+.bold{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.detail-product__info-content-list > ul li.size-active{
+    background-color: $black-color;
+    color: $white-color;
+}
+
+.detail-product-box{
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border-color;
+}
