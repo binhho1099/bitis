@@ -1,1049 +1,1679 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <script src="https://kit.fontawesome.com/28e73f5990.js"></script>
-    <link rel="icon" href="./assets/img/logo.png" type="image/gif" sizes="16x16">
+    <link
+      rel="icon"
+      href="./assets/img/logo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- swiper -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Trang bán hàng trực tuyến của Biti's</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header start -->
     <header id="header">
-        <div class="header-top">
-            <div class="grid wide">
-                <nav class="nav">
-                    <div class="nav-item"><a class="nav-link" href="tel:0367246178">Hotline: 0367 246 178 (8h - 12h, 13h30 - 17h)</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Tìm cửa hàng</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Liên hệ hợp tác</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Mua hàng tại Amazon</a></div>
-                    <div class="nav-item"><a class="nav-link" href="#">Kiểm tra đơn hàng</a></div>
-                    <div class="nav-login">
-                        <a class="nav-link nav-link-login" href="login.html">Đăng nhập</a>
-                        <div class="separation">|</div>
-                        <a class="nav-link nav-link-login" href="register.html">Đăng kí</a>
-                    </div>
-                    <div class="nav-item nav-language">
-                        <img src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508" alt="quoc ki">
-                        <div class="nav-language__box">
-                            <ul class="nav-language__list">
-                                <li class="nav-language__item">
-                                    <img src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508" alt="quoc ki"> <span>VietNam</span>
-                                </li>
-                                <li class="nav-language__item">
-                                    <img src="https://theme.hstatic.net/1000230642/1000679613/14/en.png?v=1508" alt="quoc ki"> <span>English</span>
-                                </li>
-                                <li class="nav-language__item">
-                                    <img src="https://theme.hstatic.net/1000230642/1000679613/14/cn.jpg?v=1508" alt="quoc ki"> <span>Chinese</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+      <div class="header-top">
+        <div class="grid wide">
+          <nav class="nav">
+            <div class="nav-item">
+              <a class="nav-link" href="tel:0367246178"
+                >Hotline: 0367 246 178 (8h - 12h, 13h30 - 17h)</a
+              >
             </div>
-        </div>
-        <div class="header"> 
-            <div class="grid wide">
-                <div class="header-mbtop">
-                    <div class="header-content">
-                        <div class="header-toggle" id="toggle">
-                            <i class="fas fa-bars"></i>
-                        </div>
-                        <div class="header-logo">
-                            <a href="#" class="header-logo__link">
-                                <img src="./assets/img/logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <div class="header-search">
-                            <div class="header-search__search">
-                                <input type="text" name="" id="" placeholder="Nhập thông tin sản phẩm cần tìm">
-                                <button class="btn"><i class="fas fa-search"></i></button>
-                            </div>
-                            <ul class="header-category">
-                                <li class="header-category__item"><a class="header-category__item-link header-category__active" href="#">Về Biti's</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#men">Nam</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#women">Nữ</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#gosto">Gosto</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#boy">Bé Trai</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#girl">Bé Gái</a></li>
-                                <li class="header-category__item"><a class="header-category__item-link" href="#news">Tin Tức</a></li>
-                            </ul>
-                        </div>
-                        <div class="header-sidebar">
-                            <img src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508" alt="quoc ki" id="language">
-                            <i class="far fa-heart header-sidebar-favorite"></i>
-                            <div class="header-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                                <div class="header-cart__list">
-                                    <h3 class="header-cart__heading">
-                                        Thông tin giỏ hàng
-                                    </h3>
-                                    <div class="header-cart__img">
-                                        <img src="https://planetpopindia.com/templates/default-new/images/no-cart.png" alt="no-cart">
-                                    </div>
-                                    <div class="header-cart__sum">
-                                        <h3>Tổng cộng:</h3>
-                                        <span>0 đ</span>
-                                    </div>
-                                    <div class="header-cart__payment">
-                                        <button class="header-cart__btn btn">Xem chi tiết</button>
-                                        <button class="header-cart__btn btn btn-primary">Thanh toán</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-mbbottom">
-                    <div class="header-search__mb">
-                        <input type="text" name="" id="" placeholder="Nhập thông tin sản phẩm cần tìm">
-                        <button class="btn"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#">Tìm cửa hàng</a>
             </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#">Liên hệ hợp tác</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#">Mua hàng tại Amazon</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link" href="#">Kiểm tra đơn hàng</a>
+            </div>
+            <div class="nav-login">
+              <a class="nav-link nav-link-login" href="login.html">Đăng nhập</a>
+              <div class="separation">|</div>
+              <a class="nav-link nav-link-login" href="register.html"
+                >Đăng kí</a
+              >
+            </div>
+            <div class="nav-item nav-language">
+              <img
+                src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508"
+                alt="quoc ki"
+              />
+              <div class="nav-language__box">
+                <ul class="nav-language__list">
+                  <li class="nav-language__item">
+                    <img
+                      src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508"
+                      alt="quoc ki"
+                    />
+                    <span>VietNam</span>
+                  </li>
+                  <li class="nav-language__item">
+                    <img
+                      src="https://theme.hstatic.net/1000230642/1000679613/14/en.png?v=1508"
+                      alt="quoc ki"
+                    />
+                    <span>English</span>
+                  </li>
+                  <li class="nav-language__item">
+                    <img
+                      src="https://theme.hstatic.net/1000230642/1000679613/14/cn.jpg?v=1508"
+                      alt="quoc ki"
+                    />
+                    <span>Chinese</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-        
+      </div>
+      <div class="header">
+        <div class="grid wide">
+          <div class="header-mbtop">
+            <div class="header-content">
+              <div class="header-toggle" id="toggle">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="header-logo">
+                <a href="#" class="header-logo__link">
+                  <img src="./assets/img/logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="header-search">
+                <div class="header-search__search">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Nhập thông tin sản phẩm cần tìm"
+                  />
+                  <button class="btn"><i class="fas fa-search"></i></button>
+                </div>
+                <ul class="header-category">
+                  <li class="header-category__item">
+                    <a
+                      class="header-category__item-link header-category__active"
+                      href="#"
+                      >Về Biti's</a
+                    >
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#men">Nam</a>
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#women">Nữ</a>
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#gosto"
+                      >Gosto</a
+                    >
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#boy"
+                      >Bé Trai</a
+                    >
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#girl"
+                      >Bé Gái</a
+                    >
+                  </li>
+                  <li class="header-category__item">
+                    <a class="header-category__item-link" href="#news"
+                      >Tin Tức</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="header-sidebar">
+                <img
+                  src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1508"
+                  alt="quoc ki"
+                  id="language"
+                />
+                <i class="far fa-heart header-sidebar-favorite"></i>
+                <div class="header-cart">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="header-cart__list">
+                    <h3 class="header-cart__heading">Thông tin giỏ hàng</h3>
+                    <div class="header-cart__img">
+                      <img
+                        src="https://planetpopindia.com/templates/default-new/images/no-cart.png"
+                        alt="no-cart"
+                      />
+                    </div>
+                    <div class="header-cart__sum">
+                      <h3>Tổng cộng:</h3>
+                      <span>0 đ</span>
+                    </div>
+                    <div class="header-cart__payment">
+                      <button class="header-cart__btn btn">Xem chi tiết</button>
+                      <button class="header-cart__btn btn btn-primary">
+                        Thanh toán
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-mbbottom">
+            <div class="header-search__mb">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Nhập thông tin sản phẩm cần tìm"
+              />
+              <button class="btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header end -->
-    
+
     <!-- Slider main container -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/3518cf9bc041341f6d50_c0a42b7f02c045ff90a7baf67f11c52f_master.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/2048x693_combo20_7125b4e04d3041f6b8e3549735919412_master.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/bitis_june_21_sandal_ct_d02b34cfc09845a1bdd85a29aea0c998_master.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="https://file.hstatic.net/1000230642/file/milo_2c28917796234b0e932b9c44ef5018d4_master.png" alt=""></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://file.hstatic.net/1000230642/file/3518cf9bc041341f6d50_c0a42b7f02c045ff90a7baf67f11c52f_master.jpg"
+            alt=""
+          />
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"><img src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509" alt=""></div>
-        <div class="swiper-button-next"><img src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509" alt=""></div>
-        <!-- <div class="swiper-scrollbar"></div> -->
+        <div class="swiper-slide">
+          <img
+            src="https://file.hstatic.net/1000230642/file/2048x693_combo20_7125b4e04d3041f6b8e3549735919412_master.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://file.hstatic.net/1000230642/file/bitis_june_21_sandal_ct_d02b34cfc09845a1bdd85a29aea0c998_master.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://file.hstatic.net/1000230642/file/milo_2c28917796234b0e932b9c44ef5018d4_master.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev">
+        <img
+          src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509"
+          alt=""
+        />
+      </div>
+      <div class="swiper-button-next">
+        <img
+          src="https://theme.hstatic.net/1000230642/1000679613/14/arrow.png?v=1509"
+          alt=""
+        />
+      </div>
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
     <!-- gallery start -->
     <section class="gallery">
-        <div class="grid wide">
-            <div class="gallery-heading"> 
-                <h3><i class="fas fa-undo-alt"></i>Đổi size miễn phí</h3>
-                <span>Tại tất cả cửa hàng, trong vòng 1 tuần</span>
-            </div>
-            <div class="gallery-content">
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-2_d5cc77ab5fa34ae5bea38ff9413ad60f_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-3_06b272263c19450b9705f942567fc05c_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/untitled-1-1_04edd88faa7c4c38912c668ba987728e_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-6_2700ab7c2d1649078d83f11f48115883_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-7_01a820ce4bbf4faa9c51db18bda5634c_master.jpg" alt=""></a>
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/banner-cate-5_513967e8e2f54fec9d5d88ecde42f23c_master.jpg" alt=""></a>
-            </div>
+      <div class="grid wide">
+        <div class="gallery-heading">
+          <h3><i class="fas fa-undo-alt"></i>Đổi size miễn phí</h3>
+          <span>Tại tất cả cửa hàng, trong vòng 1 tuần</span>
         </div>
+        <div class="gallery-content">
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-1_76bca9574e71406cb7536394202d76ad_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-2_d5cc77ab5fa34ae5bea38ff9413ad60f_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-3_06b272263c19450b9705f942567fc05c_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/untitled-1-1_04edd88faa7c4c38912c668ba987728e_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-6_2700ab7c2d1649078d83f11f48115883_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-7_01a820ce4bbf4faa9c51db18bda5634c_master.jpg"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/banner-cate-5_513967e8e2f54fec9d5d88ecde42f23c_master.jpg"
+              alt=""
+          /></a>
+        </div>
+      </div>
     </section>
     <!-- gallery end -->
 
     <!-- new product start -->
     <section class="product">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Dành riêng cho bạn</h3></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <p class="product-item__price">
-                                449,500đ
-                                <span class="product-item__price-old">899,000đ</span>
-                                <span class="product-item__price-percent">-50%</span>
-                            </p>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh01100cam__5__1a189b8f8b394b3fa2c5e58b9ba57b6b_large.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <p class="product-item__price">
-                                629,000đ
-                                <span class="product-item__price-old">899,000đ</span>
-                                <span class="product-item__price-percent">-30%</span>
-                            </p>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh03400xmn_5__97ab4d643dd14faca4edf02a9d57ce26_large.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">999,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/03400cam__6__5022ef5622dc46b1bd893b238de2200f_large.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">999,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/9_4af2a89ef6a8461184dda8b5339a0787_large.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">915,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Dành riêng cho bạn</h3></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <p class="product-item__price">
+                  449,500đ
+                  <span class="product-item__price-old">899,000đ</span>
+                  <span class="product-item__price-percent">-50%</span>
+                </p>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100cam__5__1a189b8f8b394b3fa2c5e58b9ba57b6b_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <p class="product-item__price">
+                  629,000đ
+                  <span class="product-item__price-old">899,000đ</span>
+                  <span class="product-item__price-percent">-30%</span>
+                </p>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh03400xmn_5__97ab4d643dd14faca4edf02a9d57ce26_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">999,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/03400cam__6__5022ef5622dc46b1bd893b238de2200f_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">999,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/9_4af2a89ef6a8461184dda8b5339a0787_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">915,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- new product end -->
 
     <!-- men product start -->
     <section class="product" id="men">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Nam</h3></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06700trg39_1_fix_ac84357c18d84672b09db8abebfa6ce4_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06700den39_1_fix_9d0019e375744e1c8a22eb43fc96b024_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06500xam_b0fb33a8959d4b0da054f2bded78ea25_medium.png" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">899,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06500den_6fcdc60b38d1413d9591bc485cab90a0_medium.png" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nam biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nam</span>
-                            <span class="product-item__price">899,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Nam</h3></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh06700trg39_1_fix_ac84357c18d84672b09db8abebfa6ce4_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">899,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nam biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nam</span>
+                <span class="product-item__price">899,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- men product end -->
 
     <!-- women product start -->
     <section class="product" id="women">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Nữ</h3></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06100kem-2_661cd2a87990466393eebab7dad1ee7c_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nữ</span>
-                            <span class="product-item__price">1,499,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsmh06700kem39_1__21e4b84f1cd54b58b22718275b7f8604_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nữ</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsw065000hog_5fcf3318390040c6a7b3be12188a6521_medium.png" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nữ</span>
-                            <span class="product-item__price">829,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/3034359ae88f1fd1469e_23856f9efc7d49f9848c9d9aa3a21623_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nữ</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dswh06200tim39_1__6e7ae84c155a431697fe544816f5271e_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Giày thể thao nữ biti's hunter Core Refreshing Collection Marios Brow marginn DSMH06700KEM (Kem)</h3></a>
-                            <span class="product-item__description">Hunter nữ</span>
-                            <span class="product-item__price">799,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Nữ</h3></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh06100kem-2_661cd2a87990466393eebab7dad1ee7c_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nữ biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nữ</span>
+                <span class="product-item__price">1,499,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nữ biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nữ</span>
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nữ biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nữ</span>
+                <span class="product-item__price">829,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nữ biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nữ</span>
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dswh06200tim39_1__6e7ae84c155a431697fe544816f5271e_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Giày thể thao nữ biti's hunter Core Refreshing Collection
+                    Marios Brow marginn DSMH06700KEM (Kem)
+                  </h3></a
+                >
+                <span class="product-item__description">Hunter nữ</span>
+                <span class="product-item__price">799,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- women product end -->
-    
+
     <!-- GOSTO start -->
     <section class="product" id="gosto">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><img src="https://file.hstatic.net/1000230642/file/logo_master.png" alt=""></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsc_0919_2208f32bd36b456cb95be53e69eceb95_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
-                            <span class="product-item__description">Giày thời trang nữ</span>
-                            <span class="product-item__price">799,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/dsc_0797_11b21a612f914f79a845b793f7c374ad_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
-                            <span class="product-item__description">Giày thời trang nữ</span>
-                            <span class="product-item__price">799,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/gfw017200den__5__5faab268eea341e997d9781346535d15_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
-                            <span class="product-item__description">Giày thời trang nữ</span>
-                            <span class="product-item__price">799,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/gfw016900den__5__5d24eb084bc643178450a610f1fbcd0f_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
-                            <span class="product-item__description">Giày thời trang nữ</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/gfw016700trg__5__5c40673b6b9e446eb5f925639a046efc_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*</h3></a>
-                            <span class="product-item__description">Giày thời trang nữ</span>
-                            <span class="product-item__price">699,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"
+            ><img
+              src="https://file.hstatic.net/1000230642/file/logo_master.png"
+              alt=""
+          /></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*
+                  </h3></a
+                >
+                <span class="product-item__description"
+                  >Giày thời trang nữ</span
+                >
+                <span class="product-item__price">799,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*
+                  </h3></a
+                >
+                <span class="product-item__description"
+                  >Giày thời trang nữ</span
+                >
+                <span class="product-item__price">799,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/gfw017200den__5__5faab268eea341e997d9781346535d15_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*
+                  </h3></a
+                >
+                <span class="product-item__description"
+                  >Giày thời trang nữ</span
+                >
+                <span class="product-item__price">799,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/gfw016900den__5__5d24eb084bc643178450a610f1fbcd0f_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*
+                  </h3></a
+                >
+                <span class="product-item__description"
+                  >Giày thời trang nữ</span
+                >
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/gfw016700trg__5__5c40673b6b9e446eb5f925639a046efc_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Da Thật Nữ Gosto GFW017100NAU (Nâu)*
+                  </h3></a
+                >
+                <span class="product-item__description"
+                  >Giày thời trang nữ</span
+                >
+                <span class="product-item__price">699,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- GOSTO end -->
 
     <div class="banner">
-        <div class="grid wide">
-            <a href="#"><img class="banner-img" src="https://file.hstatic.net/1000230642/file/banner-be-trai_d4d5c86d3b7845e5876752376099a6af_master.jpg" alt=""></a>
-        </div>
+      <div class="grid wide">
+        <a href="#"
+          ><img
+            class="banner-img"
+            src="https://file.hstatic.net/1000230642/file/banner-be-trai_d4d5c86d3b7845e5876752376099a6af_master.jpg"
+            alt=""
+        /></a>
+      </div>
     </div>
 
     <!-- boy product start -->
     <section class="product" id="boy">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Bé Nam</h3></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/deb008100doo__5__87ead35244af40a1bcbadca005df8c41_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Trai</span>
-                            <span class="product-item__price">245,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drb031400xam28_4__55327806a0b047a29570f57eae596dff_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Trai</span>
-                            <span class="product-item__price">255,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drb031400xmn_3_7b521f5c220c42359ed7b80cb252e7c6_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Trai</span>
-                            <span class="product-item__price">255,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drb031600den35_4__6211b3bf60d945a48b3770992e2e4c21_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Trai</span>
-                            <span class="product-item__price">290,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drb031600reu_3_3db93ae1390f4f5bbef85ecc4c01c869_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Trai</span>
-                            <span class="product-item__price">290,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Bé Nam</h3></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/deb008100doo__5__87ead35244af40a1bcbadca005df8c41_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Trai</span>
+                <span class="product-item__price">245,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Trai</span>
+                <span class="product-item__price">255,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Trai</span>
+                <span class="product-item__price">255,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/drb031600den35_4__6211b3bf60d945a48b3770992e2e4c21_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Trai</span>
+                <span class="product-item__price">290,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/drb031600reu_3_3db93ae1390f4f5bbef85ecc4c01c869_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Trai Biti's DRB031600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Trai</span>
+                <span class="product-item__price">290,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- boy product end -->
 
     <div class="banner">
-        <div class="grid wide">
-            <a href="#"><img class="banner-img" src="https://file.hstatic.net/1000230642/file/banner-be-gai_013d411593894fb9806d9d9ded8950f9_master.jpg" alt=""></a>
-        </div>
+      <div class="grid wide">
+        <a href="#"
+          ><img
+            class="banner-img"
+            src="https://file.hstatic.net/1000230642/file/banner-be-gai_013d411593894fb9806d9d9ded8950f9_master.jpg"
+            alt=""
+        /></a>
+      </div>
     </div>
 
     <!-- girl product start -->
     <section class="product" id="girl">
-        <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Bé gái</h3></a>
-            </div>
-            <div class="row margin">
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/deg007700hog__5__25f9ad4e05514645963cee6a7d33536c_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Gái</span>
-                            <span class="product-item__price">260,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/deg007700xnh__4__d43e7ece7c354a97bf4c1d11acc5a791_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Gái</span>
-                            <span class="product-item__price">260,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/deg007701trg__5__707ea658ebf849e08d29e128b06e7dc7_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Gái</span>
-                            <span class="product-item__price">260,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drg001600hog28_4__9d53ee04cdc647849c82ef18fd717c81_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Gái</span>
-                            <span class="product-item__price">245,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l-2-4 m-4 c-6">
-                    <div class="product-item">
-                        <div class="product-item__img">
-                            <a href="product.html"><img src="https://product.hstatic.net/1000230642/product/drg001600xnh_3_9643ea270b6f4edd9f7aa3b74498e023_medium.jpg" alt="product"></a> 
-                        </div>
-                        <div class="product-item__info">
-                            <a href="product.html"><h3 class="product-item__name">Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)</h3></a>
-                            <span class="product-item__description">Sandal Bé Gái</span>
-                            <span class="product-item__price">245,000 đ</span>
-                            <a href="product.html" class="product-item__btn btn">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-detail">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-            </div>
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Bé gái</h3></a>
         </div>
+        <div class="row margin">
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/deg007700hog__5__25f9ad4e05514645963cee6a7d33536c_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Gái</span>
+                <span class="product-item__price">260,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/deg007700xnh__4__d43e7ece7c354a97bf4c1d11acc5a791_medium.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Gái</span>
+                <span class="product-item__price">260,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Gái</span>
+                <span class="product-item__price">260,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Gái</span>
+                <span class="product-item__price">245,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col l-2-4 m-4 c-6">
+            <div class="product-item">
+              <div class="product-item__img">
+                <a href="product.html"
+                  ><img
+                    src="https://product.hstatic.net/1000230642/product/dsmh01100doo__2__cd92e23541184ef8a95369c3f69773eb_large.jpg"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-item__info">
+                <a href="product.html"
+                  ><h3 class="product-item__name">
+                    Sandal Si Cao Su Bé Gái Biti's DRG001600XNH (Xanh Nhớt)
+                  </h3></a
+                >
+                <span class="product-item__description">Sandal Bé Gái</span>
+                <span class="product-item__price">245,000 đ</span>
+                <a href="product.html" class="product-item__btn btn"
+                  >Xem chi tiết</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-detail">
+          <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
     <!-- girl product end -->
 
     <!-- news start -->
     <section class="news" id="news">
-        <div class="grid wide">
-            <div class="news-box">
-                <div class="news-tittle">
-                    <div class="product-heading">
-                        <a href="#"><h3>Tin tức Biti's</h3></a>
-                    </div>
-                </div>
-                <div class="news-content">
-                    <div class="news-content__slider">
-                        <img src="https://file.hstatic.net/1000230642/article/ctkm_72fbf763a0324cae878c1a2236f85d97_large_572a0c1da1414f0d8da29695b5698ada_1024x1024.png" alt="">
-                    </div>
-                    <div class="news-content__list">
-                        <div class="news-content__item">
-                            <div class="news-content__item-img">
-                                <img src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-overlay__tittle">
-                                        <i class="fas fa-share-alt"></i> Share now
-                                    </div>
-                                    <div class="img-overlay__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-content__item-info">
-                                <a href="#"><h3>THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI</h3></a>
-                                <span>"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé, cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép, tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người xung quanh.</span>
-                            </div>
-                        </div>
-                        <div class="news-content__item">
-                            <div class="news-content__item-img">
-                                <img src="https://file.hstatic.net/1000230642/article/ctkm_72fbf763a0324cae878c1a2236f85d97_large_572a0c1da1414f0d8da29695b5698ada_1024x1024.png" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-overlay__tittle">
-                                        <i class="fas fa-share-alt"></i> Share now
-                                    </div>
-                                    <div class="img-overlay__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-content__item-info">
-                                <a href="#"><h3>THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI</h3></a>
-                                <span>"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé, cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép, tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người xung quanh.</span>
-                            </div>
-                        </div>
-                        <div class="news-content__item">
-                            <div class="news-content__item-img">
-                                <img src="https://file.hstatic.net/1000230642/article/screen_shot_2020-08-11_at_14.16.31_e7e3513bc9994efbbf0c0aeea1d49525_1024x1024.png" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-overlay__tittle">
-                                        <i class="fas fa-share-alt"></i> Share now
-                                    </div>
-                                    <div class="img-overlay__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-content__item-info">
-                                <a href="#"><h3>THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI</h3></a>
-                                <span>"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé, cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép, tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người xung quanh.</span>
-                            </div>
-                        </div>
-                        <div class="news-content__item">
-                            <div class="news-content__item-img">
-                                <img src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-overlay__tittle">
-                                        <i class="fas fa-share-alt"></i> Share now
-                                    </div>
-                                    <div class="img-overlay__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-content__item-info">
-                                <a href="#"><h3>THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI</h3></a>
-                                <span>"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé, cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép, tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người xung quanh.</span>
-                            </div>
-                        </div>
-                        <div class="news-content__item">
-                            <div class="news-content__item-img">
-                                <img src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png" alt="">
-                                <div class="img-overlay">
-                                    <div class="img-overlay__tittle">
-                                        <i class="fas fa-share-alt"></i> Share now
-                                    </div>
-                                    <div class="img-overlay__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-content__item-info">
-                                <a href="#"><h3>THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI</h3></a>
-                                <span>"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé, cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép, tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người xung quanh.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="grid wide">
+        <div class="news-box">
+          <div class="news-tittle">
+            <div class="product-heading">
+              <a href="#"><h3>Tin tức Biti's</h3></a>
             </div>
+          </div>
+          <div class="news-content">
+            <div class="news-content__slider">
+              <img
+                src="https://file.hstatic.net/1000230642/article/ctkm_72fbf763a0324cae878c1a2236f85d97_large_572a0c1da1414f0d8da29695b5698ada_1024x1024.png"
+                alt=""
+              />
+            </div>
+            <div class="news-content__list">
+              <div class="news-content__item">
+                <div class="news-content__item-img">
+                  <img
+                    src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png"
+                    alt=""
+                  />
+                  <div class="img-overlay">
+                    <div class="img-overlay__tittle">
+                      <i class="fas fa-share-alt"></i> Share now
+                    </div>
+                    <div class="img-overlay__social">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-content__item-info">
+                  <a href="#"
+                    ><h3>
+                      THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI
+                    </h3></a
+                  >
+                  <span
+                    >"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé,
+                    cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép,
+                    tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho
+                    bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người
+                    xung quanh.</span
+                  >
+                </div>
+              </div>
+              <div class="news-content__item">
+                <div class="news-content__item-img">
+                  <img
+                    src="https://file.hstatic.net/1000230642/article/ctkm_72fbf763a0324cae878c1a2236f85d97_large_572a0c1da1414f0d8da29695b5698ada_1024x1024.png"
+                    alt=""
+                  />
+                  <div class="img-overlay">
+                    <div class="img-overlay__tittle">
+                      <i class="fas fa-share-alt"></i> Share now
+                    </div>
+                    <div class="img-overlay__social">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-content__item-info">
+                  <a href="#"
+                    ><h3>
+                      THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI
+                    </h3></a
+                  >
+                  <span
+                    >"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé,
+                    cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép,
+                    tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho
+                    bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người
+                    xung quanh.</span
+                  >
+                </div>
+              </div>
+              <div class="news-content__item">
+                <div class="news-content__item-img">
+                  <img
+                    src="https://file.hstatic.net/1000230642/article/screen_shot_2020-08-11_at_14.16.31_e7e3513bc9994efbbf0c0aeea1d49525_1024x1024.png"
+                    alt=""
+                  />
+                  <div class="img-overlay">
+                    <div class="img-overlay__tittle">
+                      <i class="fas fa-share-alt"></i> Share now
+                    </div>
+                    <div class="img-overlay__social">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-content__item-info">
+                  <a href="#"
+                    ><h3>
+                      THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI
+                    </h3></a
+                  >
+                  <span
+                    >"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé,
+                    cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép,
+                    tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho
+                    bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người
+                    xung quanh.</span
+                  >
+                </div>
+              </div>
+              <div class="news-content__item">
+                <div class="news-content__item-img">
+                  <img
+                    src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png"
+                    alt=""
+                  />
+                  <div class="img-overlay">
+                    <div class="img-overlay__tittle">
+                      <i class="fas fa-share-alt"></i> Share now
+                    </div>
+                    <div class="img-overlay__social">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-content__item-info">
+                  <a href="#"
+                    ><h3>
+                      THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI
+                    </h3></a
+                  >
+                  <span
+                    >"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé,
+                    cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép,
+                    tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho
+                    bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người
+                    xung quanh.</span
+                  >
+                </div>
+              </div>
+              <div class="news-content__item">
+                <div class="news-content__item-img">
+                  <img
+                    src="https://file.hstatic.net/1000230642/article/cover_0806_763f935075434c9995305035848c4b71_1024x1024.png"
+                    alt=""
+                  />
+                  <div class="img-overlay">
+                    <div class="img-overlay__tittle">
+                      <i class="fas fa-share-alt"></i> Share now
+                    </div>
+                    <div class="img-overlay__social">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-square"></i></a>
+                      <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-content__item-info">
+                  <a href="#"
+                    ><h3>
+                      THE SOUND OF BITI’S: BƯỚC CHÂN SÓNG ĐÔI CÙNG THỜI ĐẠI
+                    </h3></a
+                  >
+                  <span
+                    >"CON MUỐN ĐI DÉP ‘BI-TÍT’ CƠ!” Tôi nhớ ngày xưa khi còn bé,
+                    cứ mỗi lần được đi chợ với mẹ mà tạt qua khu bán giày dép,
+                    tôi sẽ níu mẹ lại tại quầy của Biti’s (1), đòi nằng nặc cho
+                    bằng được đôi dép tổ ong huyền thoại để ra oai với mọi người
+                    xung quanh.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- news end -->
 
     <!-- footer start -->
     <footer class="footer">
+      <div class="grid wide">
+        <div class="product-heading">
+          <a href="#"><h3>Hệ thống cửa hàng</h3></a>
+        </div>
+        <div class="footer-store">
+          <div class="footer-store__map">
+            <img
+              src="https://file.hstatic.net/1000230642/file/map_biti_s_1024x1024_e7451fce6021464599d8920363319711_1024x1024.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-store__content">
+            <div class="footer-store__choose">
+              <form action="" class="form-choose">
+                <select name="city" id="">
+                  <option value="Tất cả">Tất cả</option>
+                  <option value="Hà Hội">Hà Hội</option>
+                  <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                  <option value="Đà Nẵng">Đà Nẵng</option>
+                  <option value="Tp Hồ Chí Minh">Tp Hồ Chí Minh</option>
+                </select>
+              </form>
+            </div>
+            <div class="footer-store__list">
+              <ul>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+                <li class="footer-store__item">
+                  <div class="footer-store__item-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="footer-store__item-info">
+                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
+                    <span
+                      >Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận
+                      1,TP.HCM</span
+                    >
+                    <span>SĐT:0282.200.7476</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-banner">
+        <h2 class="footer-banner__tittle">
+          Hashtag <span>Bitis</span> Để Có Cơ Hội Xuất Hiện Trên Website Của
+          Chúng Tôi
+        </h2>
+        <div class="footer-banner__img">
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-1_dd55885fdc8947988d056ac6fa96c970.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-2_1e0e40c09bdc48dfabaa83b6933f1595.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-3_8fd12e162f104728a7dfaf537e199f19.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-4_893a397f4ab5447a8ec48532f68e7c3e.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-5_75a4043ef4174ff2a9e93f2fdfa69acd.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-6_127786003ab84450b6cbfbe4d73d85ea.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-7_d1c84d44fdef4846adcc74e17a5526ad.jpg"
+              alt=""
+            />
+          </div>
+          <div class="footer-banner__img-item">
+            <img
+              src="https://file.hstatic.net/1000230642/file/bitis-hashtag-8_ff76dcac33fc48cc86b81bdc96032085.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="grid wide">
-            <div class="product-heading">
-                <a href="#"><h3>Hệ thống cửa hàng</h3></a>
-            </div>
-            <div class="footer-store">
-                <div class="footer-store__map">
-                    <img src="https://file.hstatic.net/1000230642/file/map_biti_s_1024x1024_e7451fce6021464599d8920363319711_1024x1024.jpg" alt="">
-                </div>
-                <div class="footer-store__content">
-                    <div class="footer-store__choose">
-                        <form action="" class="form-choose">
-                            <select name="city" id="">
-                                <option value="Tất cả">Tất cả</option>
-                                <option value="Hà Hội">Hà Hội</option>
-                                <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
-                                <option value="Đà Nẵng">Đà Nẵng</option>
-                                <option value="Tp Hồ Chí Minh">Tp Hồ Chí Minh</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="footer-store__list">
-                        <ul>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                            <li class="footer-store__item">
-                                <div class="footer-store__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-store__item-info">
-                                    <h3>CH BITI'S HUNTER-HỒ CHÍ MINH</h3>
-                                    <span>Địa chỉ: Số 47, đường Nguyễn Huệ, P.Bến Nghé, Quận 1,TP.HCM</span>
-                                    <span>SĐT:0282.200.7476</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          <div class="footer-banner__bottom">
+            <h3>ĐĂNG KÝ EMAIL ĐỂ NHẬN THÊM NHIỀU THÔNG TIN MỚI TỪ BITI’S</h3>
+            <form action="">
+              <input
+                type="email"
+                placeholder="Nhập Email của bạn ..."
+                required
+              />
+              <button class="btn btn-blue">
+                <i class="fas fa-location-arrow margin"></i> ĐĂNG KÝ
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="footer-banner">
-            <h2 class="footer-banner__tittle">
-                Hashtag <span>Bitis</span> Để Có Cơ Hội Xuất Hiện Trên Website Của Chúng Tôi
-            </h2>
-            <div class="footer-banner__img">
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-1_dd55885fdc8947988d056ac6fa96c970.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-2_1e0e40c09bdc48dfabaa83b6933f1595.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-3_8fd12e162f104728a7dfaf537e199f19.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-4_893a397f4ab5447a8ec48532f68e7c3e.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-5_75a4043ef4174ff2a9e93f2fdfa69acd.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-6_127786003ab84450b6cbfbe4d73d85ea.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-7_d1c84d44fdef4846adcc74e17a5526ad.jpg" alt="">
-                </div>
-                <div class="footer-banner__img-item">
-                    <img src="https://file.hstatic.net/1000230642/file/bitis-hashtag-8_ff76dcac33fc48cc86b81bdc96032085.jpg" alt="">
-                </div>
+      </div>
+      <div class="grid wide">
+        <div class="footer-connec">
+          <div class="footer-connec__list">
+            <div class="footer-connec__item">
+              <h3>Trợ Giúp</h3>
+              <ul>
+                <li><a href="#">Trạng thái đơn hàng</a></li>
+                <li><a href="#">Hình thức giao hàng</a></li>
+                <li><a href="#">Hình thức thanh toán</a></li>
+                <li><a href="#">Chính sách đổi trả </a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách khách hàng thân thiết</a></li>
+              </ul>
             </div>
-            <div class="grid wide">
-                <div class="footer-banner__bottom">
-                    <h3>ĐĂNG KÝ EMAIL ĐỂ NHẬN THÊM NHIỀU THÔNG TIN MỚI TỪ BITI’S</h3>
-                    <form action="">
-                        <input type="email" placeholder="Nhập Email của bạn ..." required>
-                        <button class="btn btn-blue"><i class="fas fa-location-arrow margin"></i> ĐĂNG KÝ</button>
-                    </form>
-                </div>
+            <div class="footer-connec__item">
+              <h3>Thông Tin</h3>
+              <ul>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Hệ thống cửa hàng</a></li>
+                <li><a href="#">Liên hệ hợp tác</a></li>
+                <li><a href="#">Q&A</a></li>
+              </ul>
             </div>
+            <div class="footer-connec__item">
+              <h3>Về Biti's</h3>
+              <ul>
+                <li><a href="#">Về Biti's</a></li>
+                <li><a href="#">Câu chuyện Biti's</a></li>
+                <li><a href="#">Bước tiến phát triển </a></li>
+                <li><a href="#">Hoạt động</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-connec__bitis">
+            <a href=""><img src="./assets/img/logo.png" alt="logo" /></a>
+            <h3>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h3>
+            <p>
+              <span>Địa chỉ:</span> 22 Lý Chiêu Hoàng, Phường 10, Quận 6, TP HCM
+            </p>
+            <p><span>Sđt:</span> (028) 38 753 443</p>
+            <p>
+              <span>Email:</span> Liên hệ các vấn đề về đặt hàng online :
+              tuvan_online@spanitis.com.vn
+            </p>
+            <p>
+              <span>Email:</span> Liên hệ các vấn đề về kênh cửa hàng, đại lý
+              (offline) : chamsockhachhang@spanitis.com.vn
+            </p>
+            <p><span>Hotline:</span> 19002126 ( cước phí: 3000đ/phút )</p>
+            <p>
+              Thời gian tư vấn: Từ 07h30 đến 12h15, 13h15 đến 21h30 các ngày
+              trong tuần ( Trừ ngày Lễ, Tết)
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
         <div class="grid wide">
-            <div class="footer-connec">
-                <div class="footer-connec__list">
-                    <div class="footer-connec__item">
-                        <h3>Trợ Giúp</h3>
-                        <ul>
-                            <li><a href="#">Trạng thái đơn hàng</a></li>
-                            <li><a href="#">Hình thức giao hàng</a></li>
-                            <li><a href="#">Hình thức thanh toán</a></li>
-                            <li><a href="#">Chính sách đổi trả </a></li>
-                            <li><a href="#">Chính sách giao hàng</a></li>
-                            <li><a href="#">Chính sách khách hàng thân thiết</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-connec__item">
-                        <h3>Thông Tin</h3>
-                        <ul>
-                            <li><a href="#">Tuyển dụng</a></li>
-                            <li><a href="#">Hệ thống cửa hàng</a></li>
-                            <li><a href="#">Liên hệ hợp tác</a></li>
-                            <li><a href="#">Q&A</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-connec__item">
-                        <h3>Về Biti's</h3>
-                        <ul>
-                            <li><a href="#">Về Biti's</a></li>
-                            <li><a href="#">Câu chuyện Biti's</a></li>
-                            <li><a href="#">Bước tiến phát triển </a></li>
-                            <li><a href="#">Hoạt động</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-connec__bitis">
-                    <a href=""><img src="./assets/img/logo.png" alt="logo"></a>
-                    <h3>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h3>
-                    <p><span>Địa chỉ:</span> 22 Lý Chiêu Hoàng, Phường 10, Quận 6, TP HCM</p>
-                    <p><span>Sđt:</span> (028) 38 753 443</p>
-                    <p><span>Email:</span> Liên hệ các vấn đề về đặt hàng online : tuvan_online@spanitis.com.vn</p>
-                    <p><span>Email:</span> Liên hệ các vấn đề về kênh cửa hàng, đại lý (offline) : chamsockhachhang@spanitis.com.vn</p>
-                    <p><span>Hotline:</span> 19002126 ( cước phí: 3000đ/phút )</p>
-                    <p>Thời gian tư vấn: Từ 07h30 đến 12h15, 13h15 đến 21h30 các ngày trong tuần ( Trừ ngày Lễ, Tết)</p>
-                </div>
+          <div class="row margin">
+            <div class="col l-5 m-12 c-12 m-c-center pd-10">
+              <div class="footer-bottom__rules">
+                <a href="#">Điều khoản</a>
+                <a href="#">Chính Sách Bảo Mật</a>
+                <a href="#">Hướng dẫn sử dụng</a>
+                <p>© Copyright Bitis.com.vn. Powered by Haravan Enterprise.</p>
+              </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="grid wide">
-                <div class="row margin">
-                    <div class="col l-5 m-12 c-12 m-c-center pd-10">
-                        <div class="footer-bottom__rules">
-                            <a href="#">Điều khoản</a>
-                            <a href="#">Chính Sách Bảo Mật</a>
-                            <a href="#">Hướng dẫn sử dụng</a>
-                            <p>© Copyright Bitis.com.vn. Powered by Haravan Enterprise.</p>
-                        </div>
-                    </div>
-                    <div class="col l-2 m-12 c-12 m-c-center pd-10">
-                        <img src="https://theme.hstatic.net/1000230642/1000679613/14/dadangky.png?v=1509" alt="">
-                    </div>
-                    <div class="col l-5 m-12 c-12 m-c-center pd-10">
-                        <div class="footer-bottom__document">
-                            <p>Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992,được sửa đổi lần thứ 20 ngày 28/12/2015 bởi Sở Kế hoạch và Đầu tư TPHCM</p>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="col l-2 m-12 c-12 m-c-center pd-10">
+              <img
+                src="https://theme.hstatic.net/1000230642/1000679613/14/dadangky.png?v=1509"
+                alt=""
+              />
             </div>
+            <div class="col l-5 m-12 c-12 m-c-center pd-10">
+              <div class="footer-bottom__document">
+                <p>
+                  Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992,được sửa đổi
+                  lần thứ 20 ngày 28/12/2015 bởi Sở Kế hoạch và Đầu tư TPHCM
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- footer end -->
-    
+
     <!-- Back to top -->
     <a href="#" class="to-top">
-        <i class="fas fa-chevron-up"></i>
+      <i class="fas fa-chevron-up"></i>
     </a>
     <!-- Back to top -->
 
     <!-- mobile menu -->
     <div class="menu" id="menu">
-        <div class="menu-overlay">
-            <div class="menu-content">
-                <div class="menu-top">
-                    <div class="menu-logo">
-                        <a href="#"><img src="./assets/img/logo.png" alt=""></a>
-                    </div>
-                    <div class="menu-login">
-                        <a href="#">Đăng Ký</a>
-                        <a href="#">Đăng Nhập</a>
-                    </div>
-                </div>
-                <div class="menu-body">
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="#">Về Biti's</a></li>
-                        <li class="menu-item"><a href="#men">Nam</a></li>
-                        <li class="menu-item"><a href="#ươmen">Nữ</a></li>
-                        <li class="menu-item"><a href="#gosto">GOSTO</a></li>
-                        <li class="menu-item"><a href="#boy">Bé Trai</a></li>
-                        <li class="menu-item"><a href="#girl">Bé Gái</a></li>
-                        <li class="menu-item"><a href="#news">Tin tức</a></li>
-                    </ul>
-                </div>
+      <div class="menu-overlay">
+        <div class="menu-content">
+          <div class="menu-top">
+            <div class="menu-logo">
+              <a href="#"><img src="./assets/img/logo.png" alt="" /></a>
             </div>
+            <div class="menu-login">
+              <a href="#">Đăng Ký</a>
+              <a href="#">Đăng Nhập</a>
+            </div>
+          </div>
+          <div class="menu-body">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#">Về Biti's</a></li>
+              <li class="menu-item"><a href="#men">Nam</a></li>
+              <li class="menu-item"><a href="index.html/#women">Nữ</a></li>
+              <li class="menu-item"><a href="#gosto">GOSTO</a></li>
+              <li class="menu-item"><a href="#boy">Bé Trai</a></li>
+              <li class="menu-item"><a href="#girl">Bé Gái</a></li>
+              <li class="menu-item"><a href="#news">Tin tức</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <!-- mobile menu -->
 
     <!-- mobile language -->
     <div class="language" id="language-menu">
-        <div class="language-overlay">
-            <div class="language-box">
-                <div class="language-header">
-                    <h3>Chọn Ngôn Ngữ</h3>
-                    <i class="fas fa-times" id="times-language"></i>
-                </div>
-                <div class="language-body">
-                    <ul class="language-body__list">
-                        <li class="language-body__item">
-                            <a href="#"><img src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1509" alt="">VietNam</a>
-                        </li>
-                        <li class="language-body__item">
-                            <a href="#"><img src="https://theme.hstatic.net/1000230642/1000679613/14/en.png?v=1509" alt="">English</a>
-                        </li>
-                        <li class="language-body__item">
-                            <a href="#"><img src="https://theme.hstatic.net/1000230642/1000679613/14/cn.jpg?v=1509" alt="">Chinese</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="language-overlay">
+        <div class="language-box">
+          <div class="language-header">
+            <h3>Chọn Ngôn Ngữ</h3>
+            <i class="fas fa-times" id="times-language"></i>
+          </div>
+          <div class="language-body">
+            <ul class="language-body__list">
+              <li class="language-body__item">
+                <a href="#"
+                  ><img
+                    src="https://theme.hstatic.net/1000230642/1000679613/14/vi.png?v=1509"
+                    alt=""
+                  />VietNam</a
+                >
+              </li>
+              <li class="language-body__item">
+                <a href="#"
+                  ><img
+                    src="https://theme.hstatic.net/1000230642/1000679613/14/en.png?v=1509"
+                    alt=""
+                  />English</a
+                >
+              </li>
+              <li class="language-body__item">
+                <a href="#"
+                  ><img
+                    src="https://theme.hstatic.net/1000230642/1000679613/14/cn.jpg?v=1509"
+                    alt=""
+                  />Chinese</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <!-- mobile language -->
 
     <!-- loading page -->
     <div class="loading">
-        <div class="loading-item"></div>
+      <div class="loading-item"></div>
     </div>
     <!-- loading page -->
 
@@ -1053,5 +1683,5 @@
     <!-- swiper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/script/main.js"></script>
-</body>
+  </body>
 </html>
